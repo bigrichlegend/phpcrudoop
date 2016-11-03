@@ -39,15 +39,34 @@ class MySqlDb {
 	}
 
 	public function insert( $tableName, $insertData ) {
+		$this->_query = "INSERT into $tableName";
+		$stmt = $this->_buildQuery(NULL, $insertData);
+		$stmt->execute();
+		if($stmt->affected_rows){
+			return true;
+		}
 
 	}
 
-	public function update( $tableName, $tableData ) {
+	public function update($tableName, $tableData)
+	{
+		$this->_query = "UPDATE $tableName SET ";
 
+		$stmt = $this->_buildQuery(NULL, $tableData);
+		$stmt->execute();
+
+		if ($stmt->affected_rows)
+			return true;
 	}
 
-	public function delete( $tableName ) {
+	public function delete($tableName) {
+		$this->_query = "DELETE FROM $tableName";
 
+		$stmt = $this->_buildQuery();
+		$stmt->execute();
+
+		if ($stmt->affected_rows)
+			return true;
 	}
 
 	public function where( $whereProp, $whereValue ) {
@@ -84,7 +103,6 @@ class MySqlDb {
 		}
 		// We now prepare query
 		$stmt = $this->_prepareQuery();
-		echo "LEBERT PORTER4";
 
 		if ( $this->_where ) {
 			$stmt->bind_param( $this->_paramTypeList, $where_value );
