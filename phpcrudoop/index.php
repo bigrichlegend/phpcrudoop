@@ -4,8 +4,21 @@ $Db      = new MySqlDb( 'localhost', 'root', 'root', 'records' );
 $results = $Db->query( 'SELECT * FROM players' );
 //echo "<pre>",print_r($results),"</pre>";
 //$Db->where('id', 10);
-$output = $Db->get('players', 5);
-echo "Lord Bic says :".print_r($output);
+//$output = $Db->get('players', 5);
+//echo "Lord Bic says :".print_r($output);
+/*=================Update table=======================*/
+//$updateData = array(
+//	'firstname' => 'fieldVal',
+//	'lastname'  =>  'fieldVal'
+//);
+//$Db->where('id', 15);
+//$results = $Db->update('players', $updateData);
+/*=================Update table=======================*/
+
+/*=================Delete table=======================*/
+//	$Db->where('id',12);
+//	$Db->delete('players');
+/*=================Delete table=======================*/
 ?>
 
 <!DOCTYPE html>
