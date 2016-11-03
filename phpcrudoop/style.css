@@ -1,0 +1,132 @@
+
+body {
+    background: #FFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    width: 960px;
+}
+
+header {
+    margin: 0;
+    height: 65px;
+    padding: 1px;
+}
+
+article {
+    margin: 10px 30px;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.3em;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    padding: 20px 0 0 30px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 20px 0 10px 0;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+p {
+    margin: 0 0 5px 0;
+}
+
+/*Table styles*/
+table#players {
+    margin: 20px 0 0 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #FFFFFF;
+    color: #383535;
+}
+
+table#players th, table#players td {
+    text-align: center;
+}
+
+table#players th {
+    font-size: 0.8em;
+    line-height: 12px;
+    background-color: #E79300;
+    text-transform: uppercase;
+    padding: 8px;
+    vertical-align: bottom;
+}
+
+table#players th:nth-child(1) {
+    width: 20%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+table#players th:nth-child(2) {
+    width: 30%;
+}
+
+table#players th:nth-child(3) {
+    width: 30%;
+}
+
+table#players th:nth-child(4) {
+    width: 20%;
+}
+
+table#players td {
+    font-size: 0.9em;
+    line-height: 15px;
+    padding: 12px;
+
+}
+
+table#players tbody tr:nth-child(2n):hover {
+    background-color: rgba(255, 190, 125, 0.98);
+}
+
+table#players tr {
+    border-top: 1px solid #E79300;
+}
+
+table#players tr td:nth-child(1) {
+    background: #555;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+table#players tr td:nth-child(2n+3) {
+    background: #e1d8b9;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 34px;
+        line-height: 36px;
+        padding-left: 15px;
+    }
+
+    article {
+        margin: 10px 15px;
+    }
+
+    table#players {
+        font-size: .9em;
+    }
+}
