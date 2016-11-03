@@ -8,7 +8,7 @@ $results = $Db->query( 'SELECT * FROM players' );
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title>PHP CRUD OOP</title>
 	<meta http-equiv="content-type" content="text/html charset=utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
